@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather</title>
+</head>
+<body>
+    <nav class="topnav">
+        <h1>Weathercast</h1>
+        <div class="input">
+            <input type="text" id="inputVal" class="inputVal" placeholder="Enter a city..." name="search">
+            <button type="submit" id="myBtn" class="search"><i class="fa fa-search"></i></button>
+        </div>
+    </nav>
+    <main>
+        <section class="hero">
+            <div>
+                <img src="o.png" alt="hero" width="655" height="655">
+            </div>
+        </section>
+        <section class="nc">
+            <h3>Today</h3>
+            <div class="nameclock">
+                <h2 class="name"></h2><span id="myClock" class="clock"></span>
+            </div>
+        </section>
+        <section class="display">
+            <div class="disp1">
+                <p class="icon"></p>
+                <p class="desc"></p>
+            </div>
+            <div class="disp2">
+                <p><span class="temp"></span> <sup>0</sup>C</p>
+                <p><span class="wind"></span>KT</p>
+                <p class="feels"></p>
+                <p class="pres"></p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.20.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.20.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+</body>
+</html>
